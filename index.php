@@ -24,7 +24,6 @@ foreach ($alphas as $t) {
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Projects</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 </head>
 <body>
@@ -56,7 +55,7 @@ foreach ($alphas as $t) {
 </div>
 <footer>
     <span>Directory Viewer <span class="version">v1.0</span></span>
-    <span class="copy">&copy; <?php echo date("Y"); ?><a href="https://www.battlehillmedia.com" /> Battle Hill Media</span>
+    <span class="copy">&copy; <?php echo date("Y"); ?><a href="https://www.battlehillmedia.com"> Battle Hill Media</a></span>
 </footer>
 <script>
     const el = document.getElementsByClassName("alphaGroupLabel");
