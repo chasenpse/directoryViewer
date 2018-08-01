@@ -21,10 +21,12 @@ a:hover {
 }
 
 .alphaGroupLabel {
+  color: $header-color;
   font-family: inherit;
   font-weight: bold;
   border-bottom:1px solid $border;
   width:100%;
+  padding-left:10px;
   background: $bg;
   position: relative;
   z-index: 50;
@@ -38,6 +40,7 @@ a:hover {
 
 #items {
   margin:0 auto;
+  width:100%;
   font-family: inherit;
 }
 
