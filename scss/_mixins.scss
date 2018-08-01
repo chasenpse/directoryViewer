@@ -1,0 +1,22 @@
+@mixin background-gradient($top, $bottom) {
+  background: $bottom; /* Fallback */
+  background: -webkit-linear-gradient(180deg, $top, $bottom);
+  background: -moz-linear-gradient(180deg, $top, $bottom);
+  background: -ms-linear-gradient(180deg, $top, $bottom);
+  background: -o-linear-gradient(180deg, $top, $bottom);
+  background: linear-gradient(180deg, $top, $bottom);
+}
+
+//generic handler
+@mixin crossBrowser($property, $val) {
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  -o-#{$property}: $val;
+  #{$property}: $val;
+}
+
+//item children divs
+@mixin items($property, $val) {
+  #{$property}: $val;
+}

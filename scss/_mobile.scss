@@ -1,0 +1,31 @@
+@media screen and (max-width: 767px) {
+  #mainContainer {
+    margin-bottom:60px;
+  }
+
+  .alphaGroupLabel {
+    font-size:2em;
+    padding-left:10px;
+    text-align:left;
+  }
+
+  #items {
+    width:100%;
+    text-align: center;
+  }
+
+  .item {
+    width:80%;
+    height:50px;
+    margin:10px 5%;
+    font-size:1.2em;
+    line-height:50px;
+  }
+
+  footer {
+    height:50px;
+    line-height:50px;
+    padding:0 10px;
+    font-size:1em;
+  }
+}

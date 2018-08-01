@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #mainContainer {
+    margin:56px 0 84px 0;
+  }
+
+  .alphaGroupLabel {
+    font-size:2em;
+    height:46px;
+    line-height: 46px;
+  }
+
+  #items {
+    width:96.68%;
+  }
+
+  .item {
+    width:30%;
+    height:80px;
+    margin:20px 1.66%;
+    font-size:1em;
+    line-height:80px;
+  }
+
+  footer {
+    height:64px;
+    line-height:64px;
+    padding:0 20px;
+    font-size:1em;
+  }
+}
