@@ -26,10 +26,15 @@ a:hover {
   font-weight: bold;
   border-bottom:1px solid $border;
   width:100%;
-  padding-left:10px;
+  padding:0 10px;
   background: $bg;
   position: relative;
   z-index: 50;
+}
+
+.alphaGroupCount {
+  float:right;
+  color: $border;
 }
 
 .sticky {

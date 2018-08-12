@@ -41,7 +41,16 @@ foreach ($alphas as $t) {
         }
         foreach ($alphaGroups as $i => $g) {
             if (sizeof($g->val)) {
-                echo '<div id="agl-' . $i . '" class="alphaGroupLabel">' . $g->name . '</div>';
+                $projectLength = sizeof($g->val);
+                echo '<div id="agl-' . $g->name . '" class="alphaGroupLabel">' . $g->name . '<span class="alphaGroupCount">' . $projectLength;
+                switch ($projectLength) {
+                    case 1:
+                        echo ' project</span></div>';
+                        break;
+                    default:
+                        echo ' projects</span></div>';
+                        break;
+                }
                 echo '<div class="alphaGroupContents">';
                 foreach ($g->val as $v) {
                     $url = parse_url($_SERVER['REQUEST_URI'])['path'] . $v;
@@ -54,7 +63,7 @@ foreach ($alphas as $t) {
     </div>
 </div>
 <footer>
-    <span>Directory Viewer <span class="version">v1.0</span></span>
+    <span>Directory Viewer <span class="version">v1.1</span></span>
     <span class="copy">&copy; <?php echo date("Y"); ?><a href="https://www.battlehillmedia.com"> Battle Hill Media</a></span>
 </footer>
 <script>
@@ -72,6 +81,19 @@ foreach ($alphas as $t) {
             document.getElementById(el[currentGroup].id).classList.add('sticky');
         }
     });
+    window.addEventListener('keyup', function(e) {
+        if (document.getElementById("agl-" + e.key) && e.key != '#') {
+            window.scrollTo({
+                top: document.getElementById("agl-" + e.key).offsetTop + document.getElementById("agl-" + e.key).offsetHeight,
+                behavior: "smooth"
+            });
+        } else if ((!isNaN(parseFloat(e.key)) && isFinite(e.key)) || e.key == '#') {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    })
 </script>
 </body>
 </html>
