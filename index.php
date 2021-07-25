@@ -64,7 +64,7 @@ foreach ($alphas as $t) {
 </div>
 <footer>
     <span>Directory Viewer <span class="version">v1.1</span></span>
-    <span class="copy">&copy; <?php echo date("Y"); ?><a href="https://www.battlehillmedia.com"> Battle Hill Media</a></span>
+    <span class="copy">&copy; <?php echo date("Y"); ?> <a href="https://www.scardino.dev">Nick Scardino</a></span>
 </footer>
 <script>
     const el = document.getElementsByClassName("alphaGroupLabel");
